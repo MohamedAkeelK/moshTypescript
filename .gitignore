@@ -1,0 +1,11 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore compiled JavaScript files
+dist/
+
+# Ignore editor-specific settings
+.vscode/
+
+# Ignore TypeScript cache files
+*.tsbuildinfo
