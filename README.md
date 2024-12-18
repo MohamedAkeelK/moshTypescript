@@ -46,9 +46,11 @@ Configuration of the typescript compiler
 run `tsc --init`
 will create a file called tsconfig.json, is a large file of settings , some to keep in mind are
 
-target which specifies the version of js that the compiler will generate. 2016 is safest for all browsers, can use higher target depending on where you want to deploy
+- target:
+  which specifies the version of js that the compiler will generate. 2016 is safest for all browsers, can use higher target depending on where you want to deploy
 
 another ones is
+
 module:
 rootDir: specifies the directory that cintains our source files
 
@@ -56,10 +58,19 @@ by convention we put our source code into a seperate folder
 
 in Emit section
 OutDir: specifies the directiory that will contain our js files
-when compiled, js files will be store in "./dist" folder
+when compiled, change to "./dist" and js files will be store in "./dist" folder
+can run tsc to run all TS files. can use node to run js file to see console.logs 
 
 removeComments : if enabled generated js code will be shorter
 
 noEmitOnError: should leave on true so js files arent generated when there are errors in code
 
-can run tsc to run all TS files
+sourceMap: true , and a file that specifies how each line of our TS code maps to the generated js code
+
+Data types in TS
+
+- any
+- unknown
+- never
+- enum
+- tuple
