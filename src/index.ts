@@ -57,3 +57,19 @@ console.log(mySize)
 
 
 // FUNCTIONS 
+
+function calculateTax(income: number): number{
+  if (income < 50_000)
+    return income * 1.2;
+  return income * 1.3;
+}
+
+// as best practice we should annotate our functions with the return type , in this case :number or void if no value is returned 
+// as best practice we shouldnt have any unused parameters in function, is not part of strict setting by default 
+// in tsconfig file turn "noUnusedParameters" on to see this warning 
+// - turn "noImplicitReturns": on
+// - turn "noUnusedLocals" on 
+
+
+
+
